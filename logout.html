@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Logout | AZoom Car Rental</title>
+    <link rel="icon" type="image/png" href="images/Azoom.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="logoutPage" onload="handleLogout()">
+    <div class="logoutContainer">
+        <a href="Index.html"><img src="images/Azoom.png" width="60px" alt="Azoom Logo"></a>
+        <h1>Logging Out...</h1>
+        <p>You are being securely logged out. Please wait...</p>
+    </div>
+
+    <script>
+        function handleLogout() {
+            localStorage.removeItem("loggedInUser");
+            sessionStorage.clear();
+            setTimeout(() => {
+                window.location.href = "login.html";
+            }, 1500);
+        }
+    </script>
+</body>
+
+</html>

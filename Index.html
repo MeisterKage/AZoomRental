@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home | AZoom Car Rental</title>
+    <link rel="icon" type="image/png" href="images/Azoom.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="indexPage" onload="checkLogin()">
+    <header>
+        <div class="navContainer animateOnScroll">
+            <div class="homeLogo">
+                <a href="Index.html"><img src="images/Azoom.png" height="50px"></a>
+            </div>
+
+            <div class="navLinks">
+                <a href="Index.html" class="navActive">Home</a>
+                <a href="#fleetSection">Our Fleet</a>
+            </div>
+
+            <div class="navRight">
+                <input id="navLoginBtn" type="submit" value="Login" onclick="loginLogoutTxt()">
+            </div>
+        </div>
+
+        <div class="bannerLeft animateOnScroll">
+            <span>
+                <h1>Drive and experience the best EV/Plug in Hybrid BMWs the easy way</h1>
+                <p>Ranging from performance luxury vehicles, whether you are looking for a fun driving
+                    experience, or a practical luxury car for your family, we have you covered.</p>
+                <button class="bannerBtn" type="button" onclick="location.href='login.html'">Sign up</button>
+            </span>
+        </div>
+
+        <div class="bannerRight">
+            <video id="bmwVideo" autoplay muted loop playsinline></video>
+        </div>
+        <div class="clear"></div>
+
+
+        <div class="aboutContainer">
+            <div class="aboutLeft animateOnScroll">
+                <img src="images/g70 back.webp" width="100%">
+            </div>
+
+            <div class="aboutRight animateOnScroll">
+                <span>
+                    <h1>About us</h1>
+                    <h2>Focused on EV and Plug in Hybrid BMWs with different models to choose from</h2>
+                    <p>In addition to our <b>well maintained vehicles</b>, we have the best
+                        <b>prices on the rentals of BMWs</b>, so you are sure to find a vehicle that you love anytime.
+                    </p>
+                    <button class="findOutBtn" type="button"
+                        onclick="document.getElementById('fleetSection').scrollIntoView({ behavior: 'instant' });">
+                        Find out more &#8640;
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+
+        <div class="whyUsWrapper">
+            <div class="whyUsTop animateOnScroll">
+                <span>
+                    <h1>Why us?</h1>
+                    <h2>We are the top BMW rental company in Singapore</h2>
+                    <p>With over <b>5000+ satisfied customers</b> and <b>10 years of experience</b> in the automotive
+                        industry, being the exclusive partners for BMW Singapore, we are dedicated to providing our
+                        customers with a pleasant and hassle-free car rental experience.</p>
+                </span>
+            </div>
+
+            <div class="whyUsBtm">
+                <div class="whyUsBtmWrapper animateOnScroll">
+                    <span class="whyUsBox">
+                        <img src="images/quality.png" width="125px">
+                        <h2>Quality Service</h2>
+                        <p>Our highly-trained and friendly staff are available to assist you 24/7.</p>
+                    </span>
+
+                    <span class="whyUsBox">
+                        <img src="images/deposit.png" width="125px">
+                        <h2>No Deposit Required</h2>
+                        <p>You will only be charged for your usage after the rental period has ended.</p>
+                    </span>
+
+                    <span class="whyUsBox">
+                        <img src="images/quick.jpg" width="125px">
+                        <h2>Quick and Easy</h2>
+                        <p>Convenient online booking system allows you to reserve and start driving within the day.</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+
+        <div id="fleetSection" class="contentContainer">
+            <div class="titleContainer animateOnScroll">
+                <h2>Our Fleet</h2>
+            </div>
+
+            <div class="fleetContainer">
+                <div class="fleetItem animateOnScroll">
+                    <img src="images/i7.webp" width="100%">
+                    <p>EV/Luxury</p>
+                    <h1>$180/day</h1>
+                    <h2>BMW i7</h2>
+                    <button class="carRentBtn" type="button" onclick="location.href='rentalform.html?car=BMW i7'">Rent
+                        car</button>
+                </div>
+
+                <div class="fleetItem animateOnScroll">
+                    <img src="images/m5.webp" width="100%">
+                    <p>Premium/PIH/Sports</p>
+                    <h1>$230/day</h1>
+                    <h2>BMW M5</h2>
+                    <button class="carRentBtn" type="button" onclick="location.href='rentalform.html?car=BMW M5'">Rent
+                        car</button>
+                </div>
+
+                <div class="fleetItem animateOnScroll">
+                    <img src="images/m5touring.webp" width="100%">
+                    <p>Premium/PIH/Luxury/Sports</p>
+                    <h1>$240/day</h1>
+                    <h2>BMW M5 Touring</h2>
+                    <button class="carRentBtn" type="button"
+                        onclick="location.href='html/rentalform.html?car=BMW M5 Touring'">Rent car</button>
+                </div>
+
+                <div class="fleetItem animateOnScroll">
+                    <img src="images/m340i.webp" width="100%">
+                    <p>PIH/Sports</p>
+                    <h1>$140/day</h1>
+                    <h2>BMW 340i</h2>
+                    <button class="carRentBtn" type="button" onclick="location.href='rentalform.html?car=BMW 340i'">Rent
+                        car</button>
+                </div>
+
+                <div class="fleetItem animateOnScroll">
+                    <img src="images/g82m3.webp" width="100%">
+                    <p>Premium/PIH/Sports</p>
+                    <h1>$220/day</h1>
+                    <h2>BMW M4</h2>
+                    <button class="carRentBtn" type="button" onclick="location.href='rentalform.html?car=BMW M4'">Rent
+                        car</button>
+                </div>
+
+                <div class="fleetItem animateOnScroll">
+                    <img src="images/m2.webp" width="100%">
+                    <p>Premium/PIH/Sports</p>
+                    <h1>$200/day</h1>
+                    <h2>BMW M2</h2>
+                    <button class="carRentBtn" type="button" onclick="location.href='rentalform.html?car=BMW M2'">Rent
+                        car</button>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+
+        <footer>
+            <div class="footerContainer">
+                <span class="footerLeft">
+                    <a href="Index.html"><img src="images/Azoom.png" width="150px"></a>
+                </span>
+
+                <span class="footerMiddle">
+                    <span>
+                        <a href="https://www.facebook.com/"><img class="footerIcons" src="images/facebook.png"></a>
+                        <a href="https://www.instagram.com/"><img class="footerIcons" src="images/instagram.png"></a>
+                        <a href="https://www.twitter.com/"><img class="footerIcons" src="images/xicon.webp"></a>
+                    </span>
+                </span>
+
+                <span class="footerRight">
+                    <span>
+                        <p>Contact us:</p>
+                        <p>sales@azoom.com</p>
+                        <p>+65 6512 3455</p>
+                    </span>
+                </span>
+            </div>
+        </footer>
+
+
+        <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const video = document.getElementById("bmwVideo");
+                const videoSrc = "https://bmw.scene7.com/is/content/BMW/g99_stage_dsk_sl-AVS.m3u8";
+
+                if (Hls.isSupported()) {
+                    const hls = new Hls();
+                    hls.loadSource(videoSrc);
+                    hls.attachMedia(video);
+                    hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                        video.play();
+                    });
+                } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                    video.src = videoSrc;
+                    video.addEventListener("loadedmetadata", () => video.play());
+                }
+            });
+        </script>
+</body>
+
+</html>

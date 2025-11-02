@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login | AZoom Car Rental</title>
+    <link rel="icon" type="image/png" href="images/Azoom.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="loginPage">
+    <div class="loginContainer">
+        <a href="Index.html"><img src="images/Azoom.png" width="60px" alt="Azoom Logo"></a>
+        <h1>Login</h1>
+
+        <p id="invalidLogin">Invalid username or password.</p>
+
+        <form id="loginForm">
+            <input type="text" id="usernameField" placeholder="Username" required>
+            <input type="password" id="passwordField" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+
+        <button onclick="window.location.href='register.html'">Register</button>
+
+        <p><a href="Index.html">Back to Home</a></p>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", handleLogin);
+    </script>
+</body>
+
+</html>

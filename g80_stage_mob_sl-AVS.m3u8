@@ -1,0 +1,13 @@
+#EXTM3U
+
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1619669
+
+https://stream.bmw.com.cn/hls-vod/BMW/_media_/f54/f547365d-8329-4264-9857-67b8e3502037.mp4.m3u8
+
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=937560
+
+https://stream.bmw.com.cn/hls-vod/BMW/_media_/86a/86aae782-2fff-4b61-bb5b-a71663bcf560.mp4.m3u8
+
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2901799
+
+https://stream.bmw.com.cn/hls-vod/BMW/_media_/3f3/3f336394-6cfe-4bed-a3b3-926413062c6f.mp4.m3u8

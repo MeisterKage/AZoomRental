@@ -1,0 +1,602 @@
+.clear {
+    clear: both;
+}
+
+body {
+    font-family: "Segoe UI", "Helvetica Neue";
+    background-color: #5a6864;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+img {
+    border-radius: 6px;
+}
+
+h1,
+.bannerLink {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+p {
+    margin-top: -1em;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/* ============ Buttons & Inputs ============ */
+
+button,
+input[type=submit] {
+    font-family: "Segoe UI", "Helvetica Neue";
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 0;
+    margin-top: 5%;
+}
+
+button:hover,
+input[type=submit]:hover {
+    background-color: #ffffff;
+    transition: 0.2s;
+}
+
+#loginBtn,
+.carRentBtn,
+.proceedResBtn,
+.confirmResBtn {
+    width: 100%;
+}
+
+input:not(input[type=submit], input[type=checkbox]),
+select {
+    font-family: "Segoe UI", "Helvetica Neue";
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid white;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 6px;
+    background-color: #52645f;
+    color: white;
+    font-size: 16px;
+}
+
+input:focus:not(input[type=submit], input[type=checkbox]),
+select:focus {
+    box-shadow: 0 0 7px #3671ca;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: 1px solid #3671ca;
+}
+
+/* ============ Banner Section ============ */
+
+.bannerLeft {
+    float: left;
+    height: 700px;
+    width: 40%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.bannerLeft h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: 600;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+.bannerLeft p {
+    margin-top: 0;
+}
+
+.bannerBtn {
+    padding: 12px 30px;
+}
+
+.bannerLeft .bannerLink {
+    color: white;
+    margin-left: 50px;
+}
+
+.bannerRight video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.bannerRight img {
+    vertical-align: middle;
+    animation: flyInRight 1s ease-out;
+}
+
+/* ============ Login Page ============ */
+
+.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: linear-gradient(135deg, #5a6864 0%, #54615d 100%);
+}
+
+.loginContainer {
+    background-color: #54615d;
+    border-radius: 12px;
+    width: 380px;
+    max-width: 92%;
+    padding: 32px;
+    color: white;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    animation: fadeIn 0.45s ease-out;
+}
+
+.loginContainer img {
+    width: 64px;
+    margin-bottom: 10px;
+}
+
+.loginContainer h1 {
+    margin: 6px 0 14px;
+    font-size: 24px;
+}
+
+.loginContainer p {
+    margin: 0 0 12px;
+    color: #e9f1ff;
+    font-size: 15px;
+}
+
+.loginContainer input[type="text"],
+.loginContainer input[type="password"] {
+    background-color: #52645f;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: white;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.loginContainer input[type="submit"],
+.loginContainer button {
+    margin-top: 14px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+#invalidLogin {
+    color: #ff7b7b;
+    font-size: 14px;
+    margin-top: 6px;
+    display: none;
+}
+
+/* ============ Logout Page ============ */
+
+.logoutPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: linear-gradient(135deg, #5a6864 0%, #54615d 100%);
+}
+
+.logoutContainer {
+    background-color: #54615d;
+    border-radius: 12px;
+    width: 380px;
+    max-width: 92%;
+    padding: 32px;
+    color: white;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+.logoutContainer img {
+    width: 64px;
+    margin-bottom: 10px;
+}
+
+.logoutContainer h1 {
+    margin: 6px 0 14px;
+    font-size: 24px;
+    color: white;
+}
+
+.logoutContainer p {
+    margin: 0 0 18px;
+    color: #e9f1ff;
+    font-size: 15px;
+}
+
+/* ============ Content Containers & Titles ============ */
+
+.contentContainer {
+    margin: 2% 10% 10%;
+}
+
+.titleContainer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.indexPage .contentContainer {
+    margin-top: 8%;
+}
+
+.indexPage .titleContainer {
+    width: 55%;
+}
+
+/* ============ Fleet Section ============ */
+
+.fleetContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fleetItem {
+    margin: 3%;
+    padding: 15px;
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    background-color: #929292;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.fleetItem p {
+    margin: 15px 0 0;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: right;
+}
+
+.fleetItem h2 {
+    font-weight: 400;
+}
+
+.carRentBtn {
+    margin-top: 2%;
+}
+
+/* ============ Animations ============ */
+
+.animateScrollUp {
+    animation: hFadeIn 2s 0.1s ease-out backwards;
+}
+
+@keyframes hFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+/* ============ Navbar ============ */
+
+.navContainer {
+    margin: 0 10%;
+    height: 105px;
+    display: flex;
+    align-items: center;
+}
+
+.navContainer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.homeLogo {
+    float: left;
+    margin: 0 26px 0 0;
+}
+
+.navLinks a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0 8px 0;
+    text-decoration: none;
+}
+
+.navLinks a:hover {
+    color: rgb(190, 190, 190);
+    transition: 0.2s;
+}
+
+.navActive {
+    color: #ffffff !important;
+}
+
+.navRight {
+    display: flex;
+    margin-left: auto;
+}
+
+#navLoginBtn {
+    padding: 8px 13px;
+    margin: 9px 0 9px 15px;
+    font-size: 16px;
+}
+
+
+/* ============ Footer ============ */
+
+footer {
+    background-color: #54615d;
+    width: 100%;
+}
+
+.footerContainer {
+    padding: 10px 0 100px 0;
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+}
+
+.footerLeft {
+    width: 33%;
+}
+
+.footerMiddle {
+    width: 33%;
+    text-align: center;
+}
+
+.footerIcons {
+    margin: 0 10px;
+    width: 35px;
+}
+
+.footerRight {
+    width: 33%;
+    text-align: right;
+    color: white;
+}
+
+.footerCredit {
+    font-size: 12px;
+    text-align: center;
+    color: #52645f;
+    padding-bottom: 10px;
+}
+
+.footerCredit a {
+    color: #52645f;
+}
+
+/* ============ Logo Section ============ */
+
+.logoContainer {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.logoContainer span {
+    display: table-cell;
+    text-align: center;
+}
+
+.logoContainer img {
+    width: 70px;
+    margin: 50px 5%;
+    transition: transform .2s ease-in-out;
+}
+
+.logoContainer img:hover {
+    transform: scale(1.7);
+}
+
+/* ============ About Section ============ */
+
+.aboutContainer {
+    margin: 7% 10%;
+    display: flex;
+    align-items: center;
+}
+
+.aboutLeft {
+    width: 45%;
+}
+
+.aboutRight {
+    float: right;
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+.aboutRight span {
+    margin-left: 60px;
+}
+
+.findOutBtn {
+    padding: 12px 35px;
+}
+
+/* ============ Why Us Section ============ */
+
+.whyUsWrapper {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.whyUsContainer {
+    margin: 0 10%;
+    height: 650px;
+}
+
+.whyUsTop {
+    width: 55%;
+    padding-top: 7%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.whyUsTop h1 {
+    text-shadow: 0 0 20px rgb(0 0 0 / 0.3);
+}
+
+.whyUsTop h2 {
+    color: rgb(255, 255, 255);
+}
+
+.whyUsTop p {
+    color: rgb(255, 255, 255);
+}
+
+.whyUsBtm {
+    background: linear-gradient(to bottom, rgb(0 0 0 / 0) 50%, #54615d 50%);
+}
+
+.whyUsBtm span {
+    color: white;
+}
+
+.whyUsBtmWrapper {
+    display: flex;
+    margin: 0 10%;
+    justify-content: center;
+}
+
+.whyUsBox {
+    width: 100%;
+    margin: 2%;
+    background-color: #54615d;
+    padding: 30px;
+    border-top: 8px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgb(0 0 0 / 0.1);
+}
+
+.whyUsBox p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+/* ============ Rental Form Page ============ */
+
+.rentalPage .rentalContainer {
+    max-width: 400px;
+    padding: 32px;
+    background-color: #54615d;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+.rentalPage .rentalContainer h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #e9f1ff;
+}
+
+.rentalPage .rentalContainer input[type="text"],
+.rentalPage .rentalContainer input[type="number"],
+.rentalPage .rentalContainer input[type="date"],
+.rentalPage .rentalContainer input[type="month"],
+.rentalPage .rentalContainer input[type="password"],
+.rentalPage .rentalContainer select {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    background-color: #52645f;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.5s;
+}
+
+.rentalPage .rentalContainer input:focus,
+.rentalPage .rentalContainer select:focus {
+    border: 1px solid #3671ca;
+    box-shadow: 0 0 7px #3671ca;
+}
+
+.rentalPage .rentalContainer input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #0078d4;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.rentalPage .rentalContainer input[type="submit"]:hover {
+    background-color: #005a9e;
+    transition: 0.2s;
+}
+
+.rentalPage .rentalContainer input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+#rentMessage {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #e9f1ff;
+    text-align: center;
+    display: none;
+}

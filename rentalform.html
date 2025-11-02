@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rent a BMW | AZoom Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="loginPage">
+    <div class="loginContainer">
+        <img src="images/Azoom.png" alt="Azoom Logo">
+        <h1>Rent a Car</h1>
+        <p>Fill in your details to reserve your BMW</p>
+
+        <form id="rentalForm">
+
+            <label for="carModel">Car Model</label>
+            <input type="text" id="carModel" name="carModel" placeholder="BMW i7" readonly>
+
+            <label for="pickupLocation">Pick-up Location</label>
+            <select id="pickupLocation" name="pickupLocation" required>
+                <option value="" disabled selected>Select pick-up location</option>
+                <option value="Redhill Office">Redhill Office</option>
+                <option value="Changi Airport Office">Changi Airport Office</option>
+            </select>
+
+            <label for="returnLocation">Return Location</label>
+            <select id="returnLocation" name="returnLocation" required>
+                <option value="" disabled selected>Select return location</option>
+                <option value="Redhill Office">Redhill Office</option>
+                <option value="Changi Airport Office">Changi Airport Office</option>
+            </select>
+
+            <label for="rentalDays">Number of Days</label>
+            <input type="number" id="rentalDays" name="rentalDays" min="1" placeholder="1" required>
+
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <h2>Payment Details</h2>
+
+            <label for="cardName">Name on Card</label>
+            <input type="text" id="cardName" name="cardName" placeholder="John Tan" required>
+
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" maxlength="16" placeholder="1234 5678 9012 3456"
+                required>
+
+            <label for="expiryDate">Expiry Date</label>
+            <input type="month" id="expiryDate" name="expiryDate" required>
+
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" name="cvv" maxlength="3" placeholder="123" required>
+
+            <div class="checkboxContainer">
+                <input type="checkbox" id="damageAgreement" name="damageAgreement" required>
+                <label for="damageAgreement">I agree that I am responsible for any damages caused to the vehicle during
+                    the rental period.</label>
+            </div>
+
+            <input type="submit" value="Reserve Car">
+        </form>
+
+        <p id="rentMessage"></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

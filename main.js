@@ -127,7 +127,7 @@ function handleRentalForm(e) {
         message.innerText = `Success! ${username}, you reserved a ${carModel} from ${pickupLocation} for ${rentalDays} day(s) starting from ${startDate}.`;
     }
 
-    setTimeout(() => window.location.href = "index.html", 5000);
+    setTimeout(() => window.location.href = "./index.html", 5000);
 }
 
 
@@ -147,6 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     checkLogin();
 });
+
 
 
 

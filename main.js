@@ -57,7 +57,7 @@ function handleLogin(e) {
     if (users[username] && users[username] === password) {
         document.cookie = "username=" + username + "; path=/";
         alert("Welcome " + username + ", you have successfully logged in.");
-        window.location.href = "Index.html";
+        window.location.href = "index.html";
     } else {
         const invalidLogin = document.getElementById("invalidLogin");
         if (invalidLogin) invalidLogin.style.display = "block";
@@ -147,3 +147,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     checkLogin();
 });
+
